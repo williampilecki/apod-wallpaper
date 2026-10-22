@@ -1,0 +1,33 @@
+APOD WALLPAPER 1.0.1 - FIRST RUN / UPDATE
+
+1. Extract this entire ZIP into a folder.
+2. Install Python 3.11+ for Windows if you do not already have it:
+   https://www.python.org/downloads/windows/
+   Keep Tcl/Tk enabled. Python 3.12 or 3.13 is a straightforward choice.
+3. Double-click Install.cmd as your normal Windows user.
+
+If you already have 1.0.0, close it first and run this new Install.cmd.
+No uninstall is needed; your settings and original-wallpaper backup stay.
+The updated window title reads APOD Wallpaper 1.0.1.
+
+Setup installs Pillow and truststore in a private environment, creates shortcuts, enables
+hourly/sign-in checks, and opens the app for its first update.
+
+On video days, the wallpaper stays unchanged and an optional popup links
+to the APOD. Failed downloads leave the current wallpaper intact.
+
+The app can be closed; automatic checks use Windows Task Scheduler.
+Use Pause automatic updates to stop future checks, or Restore original
+wallpaper to return to your pre-APOD image and pause automation.
+
+This source release requires Python. See docs/TESTING.md for automated
+test coverage and Windows integration status.
+
+README.md: Full usage and troubleshooting.
+docs/ARCHITECTURE.md: Components, update flow, scheduling, and state handling.
+docs/TESTING.md: Automated tests and Windows integration checklist.
+Diagnose.cmd: Connection report, if an error persists after updating.
+
+Uninstall.cmd removes the automatic task and shortcuts. Local files are
+kept so Windows does not lose access to the current wallpaper image.
+The README explains complete removal.
